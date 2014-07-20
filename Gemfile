@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # rails_12factor for deployment to Heroku
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
