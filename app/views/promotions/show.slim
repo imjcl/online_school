@@ -1,0 +1,16 @@
+h1 = @promotion["title"]
+
+h2 = @promotion["description"]
+
+img src="#{@promotion['photo_url']}" /
+
+strike
+  h4 Original Price: #{@promotion['original_price']}
+
+h4 Price: #{@promotion['price']}
+
+p
+  button
+    a href="#{@promotion['promotion_url']}" Buy Now!
+
+p = link_to 'Back to Promotions', promotions_path
