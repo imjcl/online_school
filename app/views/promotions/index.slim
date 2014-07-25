@@ -1,6 +1,8 @@
 h1 Promotions
-  
+
+p
+  = @promotions.inspect
 ul
   - @promotions["data"].each do |promo|
     li
-      = promo["title"]
+      = link_to promo["title"], "promotions/#{promo["id"]}"
