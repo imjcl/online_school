@@ -6,6 +6,9 @@ gem 'rails_12factor', group: :production
 # add Slim gem for generation for html pages
 gem 'slim-rails'
 
+# add rest client
+gem 'rest-client'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
 # Use SCSS for stylesheets
