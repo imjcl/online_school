@@ -9,6 +9,9 @@ gem 'slim-rails'
 # add rest client
 gem 'rest-client'
 
+# add foundation
+gem 'foundation-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
 # Use SCSS for stylesheets
