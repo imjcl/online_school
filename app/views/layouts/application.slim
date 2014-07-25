@@ -10,12 +10,25 @@ html
   
   body
 
-    nav
-      ul
-        li 
-          = link_to 'About', about_path
-        li
-          = link_to 'Promotions', promotions_path
+    div class="contain-to-grid"
+      nav class="top-bar" data-topbar=""
+      
+        ul class="title-area"
+          li class="toggle-topbar menu-icon"
+            a href="#"
+              span Menu   
+                      
+          li class="name" 
+            h1 
+              a href="#" Online School 
 
-    = yield
+        section class="top-bar-section"
+          ul class="right"
+            li 
+              = link_to 'About', about_path
+            li
+              = link_to 'Promotions', promotions_path
+
+    div class="row"
+      = yield
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
