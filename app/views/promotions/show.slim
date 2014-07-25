@@ -10,7 +10,6 @@ strike
 h4 Price: #{@promotion['price']}
 
 p
-  button
-    a href="#{@promotion['promotion_url']}" Buy Now!
+  a class="button" href="#{@promotion['promotion_url']}" Buy Now!
 
 p = link_to 'Back to Promotions', promotions_path
