@@ -1,0 +1,12 @@
+div class="large-6 columns"
+  div class="promotion panel"
+    a href="promotions/#{promo['id']}"
+      img src="#{promo["photo_url"]}"
+    
+    h3 class="text-center" 
+      = promo['title']
+      br /
+      small
+        = promo['description']
+        br /
+        = promo['price']
