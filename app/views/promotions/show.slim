@@ -5,12 +5,13 @@ div class="row"
     h2 
       = @promotion["title"]
 
-  div class="large-4 columns"
-    h2
-      span class="original_price"
-        strike #{@promotion['original_price']}
-      span class="sale_price"
-        =< @promotion['price']
+  div class="large-4 columns text-center"
+      h2
+        span class="prices"
+          span class="original_price"
+            strike #{@promotion['original_price']}
+          span class="sale_price"
+            = @promotion['price']
 
 div class="row"
   div class="large-12 columns text-center"
@@ -21,6 +22,6 @@ div class="row"
       = @promotion['description']
 
     p
-      a class="button" href="#{@promotion['promotion_url']}" Buy Now!
+      a class="button radius" href="#{@promotion['promotion_url']}" Buy Now!
 
 p = link_to 'Back to Promotions', promotions_path
