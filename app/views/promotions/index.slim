@@ -4,9 +4,9 @@ div class="row"
 
 - @promotions["data"].each do |promo|
   div class="large-6 columns"
-    div class="promotion"
+    div class="promotion panel"
       
-      a href="#{promo['id']}"
+      a href="promotions/#{promo['id']}"
         img src="#{promo["photo_url"]}"
       
       h3 class="text-center" 
