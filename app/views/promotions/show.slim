@@ -4,8 +4,9 @@ h2 = @promotion["description"]
 
 img src="#{@promotion['photo_url']}" /
 
-strike
-  h4 Original Price: #{@promotion['original_price']}
+h4 
+  Original Price:
+  strike #{@promotion['original_price']}
 
 h4 Price: #{@promotion['price']}
 
