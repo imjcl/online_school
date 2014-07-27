@@ -1,16 +1,21 @@
-h1 = @promotion["title"]
+div class="row"
 
-h2 = @promotion["description"]
+  div class="large-8 columns text-center"
+    img src="#{@promotion['photo_url']}" /
 
-img src="#{@promotion['photo_url']}" /
+    h1 
+      = @promotion["title"]
+      br /
+      small = @promotion["description"]
 
-h4 
-  Original Price:
-  strike #{@promotion['original_price']}
+  div class="large-4 columns"
+    h4 
+      Original Price:
+      strike #{@promotion['original_price']}
 
-h4 Price: #{@promotion['price']}
+    h4 Price: #{@promotion['price']}
 
-p
-  a class="button" href="#{@promotion['promotion_url']}" Buy Now!
+    p
+      a class="button" href="#{@promotion['promotion_url']}" Buy Now!
 
 p = link_to 'Back to Promotions', promotions_path
