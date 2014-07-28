@@ -9,4 +9,8 @@ div class="large-6 columns"
       small
         = promo['description']
         br /
-        = price_to_currency promo['price']
+        strike = price_to_currency promo['original_price']
+        =<> price_to_currency promo['price']
+        |(
+        => discount promo
+        | off!)
