@@ -1,5 +1,6 @@
 module PromotionsHelper
   def price_to_currency(price)
-    '$' + (price / 100).to_s + '.00'
+    currency = price.to_s.split ''
+    currency = '$' + currency.insert(currency.length - 2, '.').join
   end
 end
