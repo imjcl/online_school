@@ -9,9 +9,9 @@ div class="row"
       h2
         span class="prices"
           span class="original_price"
-            strike #{@promotion['original_price']}
+            strike = price_to_currency @promotion['original_price']
           span class="sale_price"
-            = @promotion['price']
+            = price_to_currency @promotion['price']
 
 div class="row"
   div class="large-12 columns text-center"
