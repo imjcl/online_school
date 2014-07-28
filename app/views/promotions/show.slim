@@ -22,6 +22,6 @@ div class="row"
       = @promotion['description']
 
     p
-      a class="button radius" href="#{@promotion['promotion_url']}" Buy Now!
+      a class="button btn radius webappcamp purchase" data-promotion-id="{1}" data-title="#{@promotion['title']}" data-amount="#{@promotion['price']}" href="#" Buy Now!
 
 p = link_to 'Back to Promotions', promotions_path
