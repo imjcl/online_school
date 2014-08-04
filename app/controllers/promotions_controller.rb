@@ -1,12 +1,9 @@
 class PromotionsController < ApplicationController
-  
   def index
-    @promotions = JSON.parse RestClient.get ENV['PROMO_ENDPOINT']
+    @promotions = WebappcampServices::get_all
   end
 
   def show
-    @promotion = JSON.parse RestClient.get "#{ENV['PROMO_ENDPOINT']}/#{params[:id]}"
-
-    @promotion = @promotion["data"]
+    @promotion = WebappcampServices::get_by_id params['id']
   end
 end
